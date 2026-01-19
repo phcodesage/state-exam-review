@@ -103,8 +103,8 @@ export default function Pricing() {
                       key={option.value}
                       onClick={() => setSelectedGrade(option.value)}
                       className={`py-2 sm:py-3 px-2 sm:px-4 rounded-lg font-medium text-sm sm:text-base transition-all duration-200 ${selectedGrade === option.value
-                          ? 'bg-[#ca3433] text-white shadow-lg scale-105'
-                          : 'bg-[#f7e0e0] text-[#0e1f3e] hover:bg-[#ca3433]/10'
+                        ? 'bg-[#ca3433] text-white shadow-lg scale-105'
+                        : 'bg-[#f7e0e0] text-[#0e1f3e] hover:bg-[#ca3433]/10'
                         }`}
                     >
                       {option.label}
@@ -123,8 +123,8 @@ export default function Pricing() {
                       key={option.value}
                       onClick={() => setSelectedSubject(option.value)}
                       className={`w-full p-4 rounded-lg font-medium transition-all duration-200 flex items-center justify-between ${selectedSubject === option.value
-                          ? 'bg-[#ca3433] text-white shadow-lg scale-105 border-2 border-[#ca3433]'
-                          : 'bg-[#f7e0e0] text-[#0e1f3e] hover:bg-[#ca3433]/10 border-2 border-transparent'
+                        ? 'bg-[#ca3433] text-white shadow-lg scale-105 border-2 border-[#ca3433]'
+                        : 'bg-[#f7e0e0] text-[#0e1f3e] hover:bg-[#ca3433]/10 border-2 border-transparent'
                         }`}
                     >
                       <span className="flex items-center space-x-2">
@@ -132,8 +132,8 @@ export default function Pricing() {
                         {option.savings && (
                           <span
                             className={`text-xs px-2 py-1 rounded ${selectedSubject === option.value
-                                ? 'bg-white/20'
-                                : 'bg-[#ca3433] text-white'
+                              ? 'bg-white/20'
+                              : 'bg-[#ca3433] text-white'
                               }`}
                           >
                             Save ${option.savings}
@@ -167,7 +167,10 @@ export default function Pricing() {
                 </p>
               </div>
 
-              <button className="w-full bg-[#ca3433] text-white py-4 rounded-lg font-poppins font-bold text-lg hover:bg-[#a82a29] transition-all duration-300 transform hover:scale-105 shadow-lg flex items-center justify-center space-x-2">
+              <button
+                onClick={() => window.open('https://buy.stripe.com/6oU6oAg8IcEq1lDcsPdfG0c', '_blank')}
+                className="w-full bg-[#ca3433] text-white py-4 rounded-lg font-poppins font-bold text-lg hover:bg-[#a82a29] transition-all duration-300 transform hover:scale-105 shadow-lg flex items-center justify-center space-x-2"
+              >
                 <DollarSign className="w-5 h-5" />
                 <span>Proceed to Payment</span>
               </button>

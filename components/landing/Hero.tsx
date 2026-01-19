@@ -38,7 +38,7 @@ export default function Hero() {
   }, []);
 
   const scrollToRegister = () => {
-    document.querySelector('#register')?.scrollIntoView({ behavior: 'smooth' });
+    document.querySelector('#pricing')?.scrollIntoView({ behavior: 'smooth' });
   };
 
   return (
